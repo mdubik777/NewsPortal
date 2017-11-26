@@ -61,7 +61,7 @@ var myLibrary =
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "dist/";
+/******/ 	__webpack_require__.p = "/webpack-demo/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 2);
@@ -169,7 +169,6 @@ const getRequest = (_baseUrl, successCallback, errorCallback, type, container) =
     let promise = fetch(_baseUrl);
 
     promise.then(response => response.json()).then(function (data) {
-        console.log(data);
         if (data && data.status === 'ok' && successCallback && typeof successCallback === 'function') {
             switch (type) {
                 case 'sources':
@@ -232,7 +231,6 @@ window.onload = function () {
     };
 
     let createChannelsButtons = _data => {
-        console.time('createByString');
         let channelsButtonsResult = '';
         for (let i = 0; i < _data.length; i++) {
             channelsButtonsResult += '<li id="' + _data[i].id + '" class="channel-button" data-name="' + _data[i].name + '">' + _data[i].name + '</li>';
@@ -240,7 +238,6 @@ window.onload = function () {
 
         hideLoading(navList);
         navList.insertAdjacentHTML('beforeend', channelsButtonsResult);
-        console.timeEnd('createByString');
 
         buttonsChannelsEventHandler();
     };
