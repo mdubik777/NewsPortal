@@ -73,6 +73,8 @@ var myLibrary =
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return renderAllArticles; });
+let imageSource = 'images/service_not_availalbe.jpg';
+
 let cleanNewsContainer = sectionContainer => {
     sectionContainer.innerHTML = '';
 };
@@ -211,8 +213,7 @@ window.onload = function () {
           baseUrl = 'https://newsapi.org/v2/top-headlines?sources=',
           api = '&apiKey=83b6d448f18244e79fa4e8619b3edf03',
           textChoice = 'Choose',
-          textBack = 'Back to list',
-          imageSource = 'images/service_not_availalbe.jpg';
+          textBack = 'Back to list';
 
     let menuNavBtn = document.getElementById('menu-btn-action'),
         navWrapper = document.getElementById('main-menu-action'),
