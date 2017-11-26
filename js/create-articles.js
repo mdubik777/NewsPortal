@@ -1,3 +1,5 @@
+let imageSource = 'images/service_not_availalbe.jpg';
+
 let cleanNewsContainer = (sectionContainer) => {
     sectionContainer.innerHTML = '';
 };
