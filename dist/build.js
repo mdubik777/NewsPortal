@@ -212,12 +212,10 @@ window.onload = function () {
     const baseUrlAll = 'https://newsapi.org/v2/sources?&apiKey=83b6d448f18244e79fa4e8619b3edf03',
           baseUrl = 'https://newsapi.org/v2/top-headlines?sources=',
           api = '&apiKey=83b6d448f18244e79fa4e8619b3edf03',
-          textChoice = 'Choose',
+          textChoice = 'continue',
           textBack = 'Back to list';
 
-    let menuNavBtn = document.getElementById('menu-btn-action'),
-        navWrapper = document.getElementById('main-menu-action'),
-        globalMenu = document.getElementById('global-menu-action'),
+    let navWrapper = document.getElementById('main-menu-action'),
         navList = document.getElementById('buttons-list'),
         chooseButton = document.getElementById('filter-button'),
         section = document.getElementById('section'),
@@ -314,19 +312,6 @@ window.onload = function () {
     };
 
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__request__["a" /* default */])(baseUrlAll, createChannelsButtons, null, 'sources', navList);
-
-    // menu
-
-    menuNavBtn.addEventListener('click', function (e) {
-        globalMenu.classList.toggle('open');
-        e.stopPropagation();
-    });
-
-    document.onclick = function (e) {
-        if (globalMenu.classList.contains('open')) {
-            globalMenu.classList.remove('open');
-        }
-    };
 
     chooseButton.addEventListener('click', function () {
 

@@ -131,7 +131,6 @@ li.channel-button {
     background: #000000;
     color: #ffffff;
     padding: 15px;
-    text-align: center;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
@@ -157,6 +156,7 @@ li.channel-button {
     text-transform: uppercase;
     font-weight: bold;
     border:1px solid black;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -246,7 +246,7 @@ h2 {
 }
 
 .logo-wrapper a span {
-    font-size: 35px;
+    font-size: 40px;
     line-height: 0.9;
     font-weight: bold;
     text-transform: uppercase;
@@ -254,34 +254,11 @@ h2 {
 
 .logo-wrapper a span:first-child {
     display: block;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .logo-wrapper a span.color-styling {
     color: #ff0000;
-}
-
-.global-menu {
-    float: right;
-    margin: 2% 1%;
-    width: 55%;
-
-}
-
-.global-menu ul {
-    overflow: hidden;
-    text-align: right;
-}
-
-.global-menu ul li {
-    display: inline-block;
-    margin-right: 2%;
-    margin-left: 2%;
-}
-
-.global-menu ul li a {
-    color:  red;
-    font-size: 20px;
 }
 
 .social-net-icons {
@@ -326,7 +303,6 @@ h2 {
     background: #000000;
     color: #ffffff;
     padding: 15px;
-    text-align: center;
     font-size: 24px;
     font-weight: bold;
     line-height: 1;
@@ -340,13 +316,13 @@ h2 {
 }
 
 .navigation ul li.channel-button.checked {
-    background: #0d0d7e;
+    background: #3a3a7d;
     color: white;
 }
 
 .navigation ul li:hover {
     color: #000000;
-    background: grey;
+    background: #b1b1b1;
     transition: all 0.3s ease-out;
 }
 
@@ -493,44 +469,6 @@ h2 {
         display: block;
     }
 
-    .global-menu {
-        height: 0;
-        float: none;
-        margin: 0;
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 170px;
-        overflow: hidden;
-        left: 0;
-        transition: height 300ms ease-in-out;
-        background: transparent;
-        z-index: 99;
-    }
-
-    .global-menu.open {
-        height: 188px;
-    }
-
-    .global-menu ul {
-        width: 100%;
-        background: lightgray;
-    }
-
-    .global-menu  ul li {
-        display: block;
-        text-align: center;
-        margin-right: 42px;
-        margin-left: 42px;
-    }
-
-    .global-menu  ul li a {
-        display: block;
-        padding: 10px 0;
-        background: lightgray;
-        border-bottom: 2px solid #000000;
-    }
-
     .logo-wrapper {
         width: 70%;
     }
@@ -551,7 +489,7 @@ h2 {
     }
 
     .logo-wrapper a span {
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .header {
