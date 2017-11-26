@@ -7,7 +7,7 @@ import {renderAllArticles} from './create-articles';
 window.onload = function() {
 
     const baseUrlAll = 'https://newsapi.org/v2/sources?&apiKey=83b6d448f18244e79fa4e8619b3edf03',
-          baseUrl = 'https:newsapi.org/v2/top-headlines?sources=',
+          baseUrl = 'https://newsapi.org/v2/top-headlines?sources=',
           api = '&apiKey=83b6d448f18244e79fa4e8619b3edf03',
           textChoice = 'Choose',
           textBack = 'Back to list',

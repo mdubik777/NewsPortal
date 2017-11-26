@@ -350,7 +350,9 @@ h2 {
     transition: all 0.3s ease-out;
 }
 
+#section span.error-msg,
 .navigation ul li.error-msg {
+    display: block;
     font-size: 35px;
     color: grey;
     text-align: center;
@@ -358,6 +360,7 @@ h2 {
     margin: auto;
 }
 
+#section span.error-msg:hover,
 .navigation ul li.error-msg:hover {
     color: grey;
     background: transparent;
