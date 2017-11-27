@@ -32,7 +32,7 @@ const getRequest = (_baseUrl, successCallback, errorCallback, type, container) =
 
     promise.then((response) => response.json())
 
-.then(function(data) {
+    .then(function(data) {
         if(data && data.status === 'ok' && successCallback && typeof successCallback === 'function'){
             switch (type){
                 case 'sources':

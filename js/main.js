@@ -46,14 +46,16 @@ window.onload = function() {
     let buttonsEventHandler = (e) => {
         let _this = e.target,
             currentId = _this.id,
-            url = buildUrl(currentId),
+            url = buildUrl(currentId),                                                                      //to comment
+//            url,                                                                                            //to uncomment
             chosenButtons = Array.prototype.slice.call(navList.childNodes);
         for (let i = 0; i < chosenButtons.length; i++ ) {
             chosenButtons[i].classList.remove('checked');
         }
         _this.classList.add('checked');
         section.innerHTML = '';
-        getRequest(url, renderAllArticles, null, 'articles', section);
+        getRequest(url, renderAllArticles, null, 'articles', section);                                      //to comment
+//        getRequest(url = buildUrl(currentId), renderAllArticles, null, 'articles', section);                //to uncomment
     };
 
      let cleanNewsContainer = () => {
@@ -137,4 +139,3 @@ window.onload = function() {
     });
 
 };
-

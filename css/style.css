@@ -333,7 +333,7 @@ h2 {
     color: grey;
     text-align: center;
     text-transform: uppercase;
-    margin: auto;
+    margin: 50px auto;
 }
 
 #section span.error-msg:hover,
