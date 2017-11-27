@@ -1,5 +1,5 @@
 # NewsPortal
-#Download folder NewPortal.zip
+# Download folder NewPortal.zip
 #Extract all
 #In main directory in console run commands:
    #npm install
